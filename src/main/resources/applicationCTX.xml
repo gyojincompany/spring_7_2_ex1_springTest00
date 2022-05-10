@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+	
+	<context:annotation-config></context:annotation-config>
+	
+	<bean id="student1" class="com.gyojincompany.spring_7_2.Student">
+		<constructor-arg>
+			<value>홍길동</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>30</value>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="otherStudent" class="com.gyojincompany.spring_7_2.OtherStudent">
+		<constructor-arg>
+			<value>이순신</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>40</value>
+		</constructor-arg>
+	</bean>
+	
+</beans>
